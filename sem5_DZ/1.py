@@ -6,9 +6,8 @@ path_my = r"C:\Users\Dom-1floor\Documents\GB\Python2\less3\main.py"
 
 
 def my_split(path: str) -> tuple:
-    a = ()
-    path1, name_full = path_my.rsplit("\\", 1)
-    # print(path1)
+    path1, name_full = path.rsplit("\\", 1)
+    # print("1", path1)
     # print(name_full)
     name, ext = name_full.split(".")
     # print(name)

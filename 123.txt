@@ -1,0 +1,17 @@
+English texts for beginners to practice reading and comprehension online and for free. 
+Practicing your comprehension of written English will both improve your vocabulary and understanding 
+of grammar and word order.
+
+Описание
+На этой лекции мы:
+- разберёмся в особенностях работы с файлами и каталогами в Python;
+- изучим функцию open для работы с содержимым файла;
+- узнаем о возможностях стандартной библиотеки для работы с файлами и каталогами.
+
+Jrjyxfybt файла
+Jrjyxfybt файла
+Окончание файла
+Окончание файлавсякая ерендавсякая ерендавсякая еренда
+всякая еренда
+Same text test for allSame text test for allSame text test for allSame text test for all1Same text test for all1
+Same text test for all1

@@ -7,7 +7,6 @@
 # print(res)
 
 
-
 # # Определяем функцию, которую будем применять к каждому элементу
 # def square(x):
 #     return x ** 2
@@ -33,7 +32,7 @@
 # print(sum(my_list))
 # print(sum(my_list, start=1024))
 
-data = [25, -42, -146, 73, -100, 12]
-# print(list(map(str, data)))
-# print(max(data, key=lambda x: -x))
-print(*filter(lambda x: not x[0].startswith('__'), globals().items()))
+# data = [25, -42, -146, 73, -100, 12]
+# # print(list(map(str, data)))
+# # print(max(data, key=lambda x: -x))
+# print(*filter(lambda x: not x[0].startswith('__'), globals().items()))

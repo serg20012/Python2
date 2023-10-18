@@ -5,33 +5,33 @@
 # премии в качестве значения. Сумма рассчитывается
 # как ставка умноженная на процент премии
 
-name ="Иванов", "Петров", "Сидоров", "Пушкин"
+name = "Иванов", "Петров", "Сидоров", "Пушкин"
 zp = [275, 150, 200, 350]
 nadbavka = "10.25%"
 
-tabl = {nam : z * float(nadbavka.replace("%", ""))/100*10.25+float(nadbavka.replace("%", "")) \
+tabl = {nam: z * float(nadbavka.replace("%", ""))/100*10.25+float(nadbavka.replace("%", ""))
         for nam, z in zip(name, zp)}
-print (tabl)
+print(tabl)
 
 # Задание №5
 # ✔ Функция принимает на вход три списка одинаковой длины:
-# ✔ имена str, 
-# ✔ ставка int, 
+# ✔ имена str,
+# ✔ ставка int,
 # ✔ премия str с указанием процентов вида «10.25%».
-# ✔ Вернуть словарь с именем в качестве ключа и суммой 
-# премии в качестве значения. 
+# ✔ Вернуть словарь с именем в качестве ключа и суммой
+# премии в качестве значения.
 # ✔ Сумма рассчитывается как ставка умноженная на процент премии
-name ="Иванов", "Петров", "Сидоров", "Пушкин"
-zp = [275, 150, 200, 350]
-nadbavka = "10.25%"
-def ras(name: list[str], zp: list[int], nadbavka: str) -> dict [str, int]:
-    tabl = {}
-    nadbavka = nadbavka.replace("%", "")
-    nadbavka = float(nadbavka)
-    for i in range(len(name)):
-        res = zp[i]/100*nadbavka+zp[i]
-        tabl[name[i]]=res
-    return tabl
+# name ="Иванов", "Петров", "Сидоров", "Пушкин"
+# zp = [275, 150, 200, 350]
+# nadbavka = "10.25%"
+# def ras(name: list[str], zp: list[int], nadbavka: str) -> dict [str, int]:
+#     tabl = {}
+#     nadbavka = nadbavka.replace("%", "")
+#     nadbavka = float(nadbavka)
+#     for i in range(len(name)):
+#         res = zp[i]/100*nadbavka+zp[i]
+#         tabl[name[i]]=res
+#     return tabl
 
-# ras (name, zp, nadbavka)
-print (ras (name, zp, nadbavka))
+# # ras (name, zp, nadbavka)
+# print (ras (name, zp, nadbavka))

@@ -19,16 +19,25 @@
 # b: float = float(input("BB: "))
 # a = a / b
 
+# print("hello workd".__doc__)
+# print(str.__doc__)
+
 # print("Hello world".upper())
 # print ("Hello world".count("l"))
 # print(help(a))
 # help()
 
-# x= int("42")
+# print(dir("Hello world!"))
+# help(print)
+# help()
+
+# x = int("42")
 # y = int(3.14215)
 # z = int("8", base=10)
-# print(x,y,z, sep="\n")
+# print(x, y, z, sep="\n")
 # print(object.__sizeof__(x))
+
+# print(0.1 + 0.2)
 
 # empty_str = ''
 # en_str = 'Text'
@@ -40,7 +49,7 @@
 # print(ru_str.__sizeof__())
 # print(unicode_str.__sizeof__())
 
-import math, decimal, fractions
+# import math, decimal, fractions
 
 # print(math.pi, math.e, math.inf, math.nan, math.tau, sep='\n')
 
@@ -56,6 +65,5 @@ import math, decimal, fractions
 # science = 2 * pi * decimal.Decimal(23.452346) ** 2
 # print(science)
 
-f1= fractions.Fraction(1,3)
-print (f1)
-      
+# f1= fractions.Fraction(1,3)
+# print (f1)

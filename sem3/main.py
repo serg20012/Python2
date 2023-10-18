@@ -38,26 +38,63 @@
 # else:
 #     print(x.upper())
 
+# вариант 2
+# x = input(" what: ")
+# print(type(x))
+# if x.isdigit() and int(x) >= 0:
+#     print("Целое положительное число")
+#     x = int(x)
+#     print(type(x))
+# elif x.replace('-', '', 1).replace('.', '', 1).isdigit() and x.startswith("-"):
+#     print("число но дробное или отрицательное")
+#     x = float(x)
+#     print(type(x))
+# elif any(letter.isupper() for letter in x):
+#     print("В строке есть хотя бы одна заглавная буква.")
+#     x = x.lower()
+#     print(x)
+#     print(type(x))
+# else:
+#     print("не число, нет заглавных.")
+#     x = x.upper()
+#     print(x)
+#     print(type(x))
+
+
 # Задание №3
 # ✔ Создайте вручную кортеж содержащий элементы разных типов.
 # ✔ Получите из него словарь списков, где:
 # ключ — тип элемента,
 # значение — список элементов данного типа
-# tuple1 = (1, 3, "cat", True, 3.4)
+# tuple1 = (1, 3, True, "cat", 5.6, True, 3.4, 5, 6)
 # dict1 = {}
 # for i in tuple1:
 #     i_x = type(i)
-#     print(i_x)
-#     if i_x not in dict1:
-#         dict1[i_x] = []
-#     dict1[i_x].append(i)
+#     # print(i_x)
+#     if i_x in dict1:
+#         val = dict1[i_x]
+#         print(val, "pyfxtybt")
+#         if isinstance(val, list):
+#             # print("one")
+#             dict1[i_x].append(i)
+#         else:
+#             dict1[i_x] = []
+#             dict1[i_x].extend([val, i])
+
+#         # print("aaaa")
+#     else:
+#         dict1.setdefault(i_x, i)
+#     print(dict1)
+#     # input()
+
 # print(dict1)
+
 
 # Задание №4
 # ✔ Создайте вручную список с повторяющимися элементами.
 # ✔ Удалите из него все элементы, которые встречаются дважды.
 
-# list1 = [1, 35, 6, 7, 4, 3, 2, 2, 3, 5, 6, 7, 6]
+# list1 = [1, 35, 6, 7, 4, 3, 2, 2, 3, 4, 5, 6, 7, 6, 25, 10, 10]
 # i = 0
 
 # while i < len(list1):
@@ -67,10 +104,11 @@
 #     print("сейчас элемент ", el)
 #     spam = list1.count(el)
 #     print("элемент выше встречается раз - ", spam)
-#     if spam == 2:
-#         for _ in range(2):
+#     if spam >= 2:
+#         for _ in range(spam):
 #             print("надо удалить", el)
 #             list1.remove(el)
+#         i = i - 1
 #     i = i + 1
 #     print(list1)
 #     input()
@@ -84,7 +122,7 @@
 
 # list1 = [1, 35, 6, 7, 4, 3, 2, 2, 3, 5, 6, 7, 6]
 # list2 = []
-# # x = 0
+# x = 0
 # # for i in list1:
 # #     x = x + 1
 # #     print("значение из лист1: ", i)
@@ -93,7 +131,7 @@
 # #         list2.append(x)
 # #     print(list2)
 # #     input()
-# # Вариант 2
+# # # Вариант 2
 # for i, nom in enumerate(list1, start=1):
 #     print(i, nom)
 #     if nom % 2 > 0:
@@ -112,11 +150,13 @@
 # text = "сьешь еще этих мягких французских булок"
 # text2 = text.split(" ")
 # text2.sort()
-# # print(text2)
+# print(text2)
 # x = max(len(word) for word in text2)
-# # print(x)
+# print(x)
 # for i, word in enumerate(text2, start=1):
-#     res = i, word
+#     # res = i, word
+#     # print(res)
+#     # input()
 #     print(f'{i} {word:>{x}}')
 
 # Задание №7
@@ -132,22 +172,23 @@
 # или не совпадают в ваших решениях.
 
 #
-text = "сьешь еще этих мягких французских булок"
-text2 = sorted(text)
-dict1 = {}
-for i in text2:
-    if i != " ":
-        l = text2.count(i)
-        dict1[i] = l
-print(dict1)
+# text = "сьешь еще этих мягких французских булок"
+# text2 = sorted(text)
+# print(text2)
+# dict1 = {}
+# for i in text2:
+#     if i != " ":
+#         l = text2.count(i)
+#         dict1[i] = l
+# print(dict1)
 
-dict1 = {}
-for i in text2:
-    if i != " ":
-        if i not in dict1:
-            dict1[i] = 1
-        else:
-            x = dict1[i]
-            x = x+1
-            dict1[i] = x
-print(dict1)
+# dict1 = {}
+# for i in text2:
+#     if i != " ":
+#         if i not in dict1:
+#             dict1[i] = 1
+#         else:
+#             x = dict1[i]
+#             x = x+1
+#             dict1[i] = x
+# print(dict1)

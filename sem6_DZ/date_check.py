@@ -10,9 +10,12 @@ def my_data(user_data):
         print("1")
         return False
     elif mounth in [4, 6, 9, 11] and day > 30:
+        print("2")
         return False
     elif mounth == 2:
         if _leap_year(year) is True and day > 29:
+            return False
+        elif day > 28:
             return False
         else:
             return True
