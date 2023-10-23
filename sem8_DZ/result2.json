@@ -1,0 +1,42 @@
+{
+    ".\\sem8_DZ": {
+        "directories": [
+            "test1 120689",
+            "test2 137024"
+        ],
+        "files": [
+            "main.py 2392",
+            "mainGPT.py 1967",
+            "result2.json 880",
+            "test3.txt 0"
+        ]
+    },
+    ".\\sem8_DZ\\test1": {
+        "directories": [
+            "prosto1 113689"
+        ],
+        "files": [
+            "File0001.docx 7000"
+        ]
+    },
+    ".\\sem8_DZ\\test1\\prosto1": {
+        "directories": [],
+        "files": [
+            "333.pdf 113689"
+        ]
+    },
+    ".\\sem8_DZ\\test2": {
+        "directories": [
+            "proso2 121473"
+        ],
+        "files": [
+            "File.docx 15551"
+        ]
+    },
+    ".\\sem8_DZ\\test2\\proso2": {
+        "directories": [],
+        "files": [
+            "111.pdf 121473"
+        ]
+    }
+}
